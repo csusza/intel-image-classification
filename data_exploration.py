@@ -26,7 +26,7 @@ if __name__ == '__main__':
     for category, value in num_by_category.items():
         print(f'{value} {category} images,')
 
-    if min(num_by_category.values()) / min(num_by_category.values()) > .85:
+    if min(num_by_category.values()) / max(num_by_category.values()) > .85:
         print(f'The dataset is balanced.')
     else:
         print(f'The dataset is unbalanced.')
